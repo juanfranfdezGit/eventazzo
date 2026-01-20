@@ -56,7 +56,7 @@
 }
 
 .playlist__nav-item.visible {
-  right: 0;
+  right: 18vw;
 }
 
 .playlist__nav-item:nth-child(2) {

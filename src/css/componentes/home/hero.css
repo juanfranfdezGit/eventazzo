@@ -29,9 +29,9 @@
   overflow: hidden;
 }
 
-.hero__circles--ext,
-.hero__circles--mid,
-.hero__circles--int {
+.hero__circles .hero__circles--ext,
+.hero__circles .hero__circles--mid,
+.hero__circles .hero__circles--int {
   position: absolute;
   left: -80%;
   bottom: -110%;
@@ -46,7 +46,7 @@
   transition: all 2s;
 }
 
-.hero__circles--mid {
+.hero__circles .hero__circles--mid {
   z-index: 3;
   left: -60%;
   bottom: -105%;
@@ -54,7 +54,7 @@
   height: 180%;
 }
 
-.hero__circles--int {
+.hero__circles .hero__circles--int {
   z-index: 6;
   left: -50%;
   bottom: -100%;

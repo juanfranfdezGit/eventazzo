@@ -1,7 +1,7 @@
 import { useInView } from 'react-intersection-observer';
 import { useNavigate } from 'react-router-dom';
 import Playlists from './playlists';
-import djs from '../../services/djs';
+import djs from '../../../services/djs';
 
 export default function DjSection() {
 

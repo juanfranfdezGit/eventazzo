@@ -6,7 +6,7 @@
   top: 0;
   z-index: 2;
   left: 0;
-  justify-content: space-between;
+  justify-content: space-between !important;
 }
 
 .header__socials__list {
@@ -62,7 +62,7 @@
 
 .hamburguerMenu-item {
   flex-direction: column;
-  align-items: end;
+  align-items: end !important;
   z-index: 3;
   transform: translate(10vw);
   animation: entrance 2s forwards linear;

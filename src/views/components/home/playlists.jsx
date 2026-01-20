@@ -1,4 +1,6 @@
 import { useInView } from 'react-intersection-observer';
+import Soundcloud from "../../../assets/images/icos/soundcloud.png";
+import Youtube from "../../../assets/images/icos/youtube.png";
 
 export default function Playlists() {
 
@@ -14,10 +16,10 @@ export default function Playlists() {
             
             <div className='playlist__nav flex'>
                 <a className={`playlist__nav-item ${visible ? "visible" : ""}`} href="https://soundcloud.com/eventazzo" target="_blank" rel="noopener noreferrer">
-                    <img src='/assets/images/icos/soundcloud.png' alt='soundcloud' />
+                    <img src={Soundcloud} alt='soundcloud' />
                 </a>
                 <a className={`playlist__nav-item ${visible ? "visible" : ""}`} href="https://www.youtube.com/@eventazzo" target="_blank" rel="noopener noreferrer">
-                    <img src='/assets/images/icos/youtube.png' alt='youtube' />
+                    <img src={Youtube} alt='youtube' />
                 </a>
             </div>
 

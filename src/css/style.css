@@ -1,16 +1,21 @@
 :root {
   --black: #111;
-  --black-light: #444;
+  --blackLight: #444;
   --white: #f9f9f9;
-  --white-dark: rgb(224, 224, 224);
+  --whiteDark: rgb(224, 224, 224);
   --gold: #e0aa3e;
-  --gold-light: #f7ef8a;
-  --gold-dark: #926f34;
+  --goldLight: #f7ef8a;
+  --goldDark: #926f34;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
 
 @font-face {
   font-family: "satoshi";
-  src: url("../../public/assets/fonts/satoshi.ttf") format("truetype");
+  src: url("../assets/fonts/satoshi.ttf") format("truetype");
 }
 
 @import url("./componentes/home/hero.css");
@@ -20,6 +25,7 @@
 @import url("./componentes/home/djSection.css");
 
 @import url("./componentes/djs/djInfo.css");
+@import url("./componentes/djs/gallery.css");
 
 @import url("./componentes/common/footer.css");
 @import url("./componentes/common/header.css");
@@ -28,10 +34,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-:root::-webkit-scrollbar {
-  width: 0;
 }
 
 html,
@@ -44,10 +46,16 @@ body {
   color: var(--white);
   scroll-behavior: smooth;
   font-family: "satoshi";
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .flex {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+li {
+  list-style: none;
 }

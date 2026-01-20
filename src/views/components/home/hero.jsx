@@ -1,4 +1,5 @@
 import Slider from "./slider";
+import Logo from "../../../assets/images/logo/eventazzoBlanco.png";
 
 export default function Hero() {
 
@@ -6,7 +7,7 @@ export default function Hero() {
         <section className='hero'>
         
             <div className="hero__logo">
-                <img src="/assets/images/logo/eventazzoBlanco.png" alt="Eventazzo"/>
+                <img src={Logo} alt="Eventazzo"/>
             </div>
 
             <div className='hero__circles'>

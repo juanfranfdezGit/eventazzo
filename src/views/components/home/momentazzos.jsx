@@ -1,4 +1,6 @@
 import ReactPlayer from 'react-player'
+import Momentazzo from '../../../assets/images/momentazzos.jpg';
+import EventazzoGrayLogo from '../../../assets/images/logo/eventazzoGris.png';
 
 export default function Momentazzos() {
 
@@ -13,7 +15,6 @@ export default function Momentazzos() {
                 width='100%'
                 height='100%'
                 controls={false}
-                playing 
                 loop 
                 muted
 
@@ -22,11 +23,11 @@ export default function Momentazzos() {
             </div>
 
             <div className="momentazzos__img">
-                <img src="/assets/images/momentazzos.jpg" className="momentazzos__img-back" alt='momentazzos background' />
+                <img src={Momentazzo} className="momentazzos__img-back" alt='momentazzos background' />
 
                 <div className="momentazzos__img__card">
-                    <img src="/assets/images/momentazzos.jpg" className="momentazzos__img__card-img" alt='momentazzos'/>
-                    <img src="/assets/images/logo/eventazzoGris.png" className="momentazzos__img__card-logo" alt='eventazzo'/>
+                    <img src={Momentazzo} className="momentazzos__img__card-img" alt='momentazzos'/>
+                    <img src={EventazzoGrayLogo} className="momentazzos__img__card-logo" alt='eventazzo'/>
                     <h2 className="momentazzos__img__card-title">Momentazzos</h2>
                 </div>
 

@@ -1,7 +1,7 @@
-import Header from "../components/common/header"
-import Footer from "../components/common/footer"
-import DjInfo from "../components/dj/djInfo"
-import Gallery from "../components/dj/gallery"
+import Header from "./components/common/header"
+import Footer from "./components/common/footer"
+import DjInfo from "./components/dj/djInfo"
+import Gallery from "./components/dj/gallery"
 
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';

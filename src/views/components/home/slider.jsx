@@ -1,4 +1,8 @@
 import { useEffect, useState } from "react";
+import img01 from "../../../assets/images/gallery01.jpg";
+import img02 from "../../../assets/images/gallery02.jpg";
+import img03 from "../../../assets/images/gallery03.jpg";
+import img04 from "../../../assets/images/gallery04.jpg";
 
 export default function Slider() {
 
@@ -31,10 +35,10 @@ export default function Slider() {
 
     return (
         <div className={`slider ${isScrolled ? 'scrolled' : ''}`}>
-            <img className={currentIndex === 0 ? 'slider__active' : ''} src='/assets/images/gallery01.jpg' alt="foto boda"></img>
-            <img className={currentIndex === 1 ? 'slider__active' : ''} src='/assets/images/gallery02.jpg' alt="foto boda"></img>
-            <img className={currentIndex === 2 ? 'slider__active' : ''} src='/assets/images/gallery03.jpg' alt="foto boda"></img>
-            <img className={currentIndex === 3 ? 'slider__active' : ''} src='/assets/images/gallery04.jpg' alt="foto boda"></img>
+            <img className={currentIndex === 0 ? 'slider__active' : ''} src={img01} alt="foto boda"></img>
+            <img className={currentIndex === 1 ? 'slider__active' : ''} src={img02} alt="foto boda"></img>
+            <img className={currentIndex === 2 ? 'slider__active' : ''} src={img03} alt="foto boda"></img>
+            <img className={currentIndex === 3 ? 'slider__active' : ''} src={img04} alt="foto boda"></img>
         </div>
     )
 }
