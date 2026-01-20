@@ -1,0 +1,115 @@
+.playlist {
+  padding-top: 15rem;
+  position: relative;
+}
+
+.playlist__title {
+  font-size: 2rem;
+  width: 200px;
+  line-height: 2.2rem;
+  color: var(--white);
+  font-family: serif;
+  position: relative;
+  right: 30vw;
+  transition: all 2s;
+}
+
+.playlist__title span {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.playlist__title.visible {
+  right: 0;
+}
+
+.playlist__description {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 400px;
+  position: relative;
+  right: 30vw;
+  transition: all 2s;
+}
+
+.playlist__description.visible {
+  right: 0;
+}
+
+.playlist__nav {
+  justify-content: start;
+  gap: 20px;
+}
+
+.playlist__nav-item {
+  right: 30vw;
+  position: relative;
+  transition: all 3s;
+}
+
+.playlist__nav-item img {
+  width: 60px;
+}
+
+.playlist__nav-item img:hover {
+  filter: drop-shadow(0 0 8px var(--gold));
+}
+
+.playlist__nav-item.visible {
+  right: 0;
+}
+
+.playlist__nav-item:nth-child(2) {
+  transition: all 3.3s;
+}
+
+.flag2 {
+  position: absolute;
+  top: 10vh;
+  width: 5px;
+  height: 500px;
+}
+
+@media (max-width: 1024px) {
+  .playlist {
+    padding-top: 12rem;
+  }
+
+  .playlist__title {
+    font-size: 3rem;
+    width: 60%;
+    line-height: 3.2rem;
+  }
+
+  .playlist__title span {
+    font-size: 3.4rem;
+    font-style: italic;
+  }
+}
+
+@media (max-width: 600px) {
+  .playlist {
+    padding-top: 10rem;
+  }
+
+  .playlist__title {
+    font-size: 2.6rem;
+    width: 90%;
+    line-height: 2.7rem;
+  }
+
+  .playlist__title span {
+    font-size: 3rem;
+    font-style: italic;
+  }
+
+  .playlist__description {
+    width: 250px;
+  }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  .playlist {
+    padding-top: 5rem;
+  }
+}

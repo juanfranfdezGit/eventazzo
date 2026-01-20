@@ -1,0 +1,76 @@
+.djInfo {
+  position: absolute;
+  right: 10vw;
+  top: 16vh;
+  width: 40vw;
+}
+
+.djInfo__title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+
+.djInfo__description {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin-bottom: 1.7rem;
+}
+
+.djInfo__price {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+
+  span {
+    font-size: 1.6rem;
+  }
+}
+
+.djInfo__button {
+  background: none;
+  border: 1px solid var(--white);
+  color: var(--white);
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  transition: all 0.5s;
+}
+
+.djInfo__button:hover {
+  cursor: pointer;
+  background: var(--white);
+  color: var(--black);
+}
+
+.dj404__title {
+  height: 40vh;
+  align-items: end;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  .djInfo {
+    right: 6vw;
+    top: 58vh;
+    width: 85vw;
+  }
+
+  .djInfo__title {
+    font-size: 2.3rem;
+  }
+
+  .djInfo__description {
+    font-size: 1.1rem;
+  }
+
+  .dj404__title {
+    font-size: 2rem;
+    padding: 4px;
+  }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  .dj404__title {
+    height: 60vh;
+  }
+}

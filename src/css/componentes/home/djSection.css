@@ -1,0 +1,213 @@
+.djsSection {
+  width: 50vw;
+  overflow: hidden;
+  padding: 10rem 4rem;
+  position: relative;
+}
+
+.flag {
+  height: 170vh;
+  width: 10px;
+  position: absolute;
+  top: 10vh;
+}
+
+.djsSection__info {
+  padding-top: 4rem;
+  margin-bottom: 4rem;
+  padding-right: 10vw;
+}
+
+.djsSection__info-span {
+  position: relative;
+  right: 950px;
+  opacity: 0;
+  transition: all 3s;
+}
+
+.djsSection__info-span.visible {
+  right: 0px;
+  opacity: 1;
+}
+
+.djsSection__info-title {
+  position: relative;
+  right: 950px;
+  opacity: 0;
+  margin-top: -10px;
+  margin-bottom: 24px;
+  transition: all 3.2s;
+}
+
+.djsSection__info-title.visible {
+  right: 0px;
+  opacity: 1;
+}
+
+.djsSection__info-description {
+  position: relative;
+  right: 950px;
+  transition: all 3.4s;
+  opacity: 0;
+}
+
+.djsSection__info-description.visible {
+  right: 0px;
+  opacity: 1;
+}
+
+.djsSection__djs__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.djsSection__djs__list__item {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  overflow: hidden;
+  transition: all 3s;
+}
+
+.djsSection__djs__list__item:hover {
+  cursor: pointer;
+}
+
+.djsSection__djs__list__item.visible {
+  right: 0;
+}
+
+.djsSection__djs__list__item__img__info {
+  position: absolute;
+  bottom: -140px;
+  background: linear-gradient(
+    0deg,
+    rgba(17, 17, 17, 0.7679446778711485) 93%,
+    rgba(17, 17, 17, 0) 100%
+  );
+  transition: all 2s;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  max-height: 90%;
+}
+
+.djsSection__djs__list__item__info-title {
+  font-size: 2rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.djsSection__djs__list__item__info-description {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  text-align: center;
+  margin: 20px 2rem;
+  opacity: 0;
+  transition: all 3s;
+}
+
+.djsSection__djs__list__item:hover .djsSection__djs__list__item__img__info {
+  bottom: 0;
+}
+
+.djsSection__djs__list__item:hover
+  .djsSection__djs__list__item__info-description {
+  opacity: 1;
+}
+
+.djsSection__djs__list__item-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 3s;
+}
+
+.djsSection__djs__list__item:hover .djsSection__djs__list__item-img {
+  width: 120%;
+  height: 120%;
+}
+
+@media (max-width: 1024px) {
+  .djsSection {
+    width: 100vw;
+    padding: 38rem 4rem 10rem 4rem;
+  }
+
+  .flag {
+    top: 0vh;
+  }
+  .djsSection__info {
+    padding-right: 0vw;
+  }
+
+  .djsSection__djs__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .djsSection__djs__list__item {
+    height: 36vh;
+  }
+
+  .djsSection__djs__list__item__img__info {
+    bottom: 0px;
+    padding-top: 1.6rem;
+    padding-bottom: 1rem;
+  }
+
+  .djsSection__djs__list__item__info-title {
+    font-size: 1.6rem;
+  }
+
+  .djsSection__djs__list__item__info-description {
+    margin: 12px 2rem;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .djsSection {
+    width: 100vw;
+    padding: 22rem 2rem 10rem 2rem;
+  }
+
+  .djsSection__info {
+    padding-right: 0vw;
+  }
+
+  .djsSection__info-title {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin-top: 2px;
+  }
+
+  .djsSection__djs__list__item {
+    height: 56vh;
+  }
+
+  .djsSection__djs__list__item__img__info {
+    bottom: 0px;
+    padding-top: 1.6rem;
+    padding-bottom: 1rem;
+  }
+
+  .djsSection__djs__list__item__info-title {
+    font-size: 1.6rem;
+  }
+
+  .djsSection__djs__list__item__info-description {
+    margin: 12px 2rem;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  .djsSection {
+    padding: 26rem 4rem 10rem 4rem;
+  }
+
+  .djsSection__djs__list__item {
+    height: 86vh;
+  }
+}
